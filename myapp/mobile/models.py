@@ -6,4 +6,7 @@ class Mobile(models.Model):
     cost = models.IntegerField()
     location = models.CharField(max_length=11)
 
-m1 = Mobile()
+    def __str__(self) -> str:
+        return self.name
+
+# m1 = Mobile()

@@ -1,0 +1,3 @@
+# Heruko related ProcFile for the djnago application deployments.. 
+
+web : gunicorn myapp.wsgi
