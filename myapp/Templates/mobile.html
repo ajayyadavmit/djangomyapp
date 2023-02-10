@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background-color: green;
+    text-align: left;
+}
+
+</style>
+<body>
+
+    <h1>mobile list </h1>
+    <h1>  Samsung</h1>
+    <h1>Apple IOS Phone List </h1>
+     <h1>mobile list </h1>
+{% for p in l1  %}
+    <li> {{p}} </li>
+{% endfor %}
+
+    {% if v1  %}
+
+    {{s1}}
+
+    {% endif  %}
+
+{% for p,k in name.items   %}
+{{p}} >>>>  {{k}}
+    {% for m in k %}
+        {{m}}
+    {% endfor %}
+{% endfor %}
+
+<form action="/laptop/" method="GET">
+
+<label for="mobilename"> Name of Mobikle</label>
+
+<input type="text" name="mobilename">
+
+<label for="cost">COST</label>
+<input type="text" name="cost">
+
+<label for=""> locations here >>> </label>
+<input type="text" name="location">
+
+<button>SUBMIT</button>
+
+</form>
+</body>
+</html>
